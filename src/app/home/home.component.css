@@ -1,0 +1,22 @@
+.home
+{
+    background-color: #e7b634;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #ccffff;
+
+}
+.home .person{
+    margin: auto;
+}
+.home .person img
+{
+    width: 250px;
+    height: 250px;
+      border-radius: 50% !important;
+}
+/* .home .person h1::after
+{
+    content: "ــــــــــ*ـــــــــ ";
+} */

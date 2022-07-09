@@ -1,0 +1,40 @@
+<div class="about" id="about">
+    <h2>PORTFOLIO</h2>
+    <!-- <div class="lineStar">
+        <div class="lineOne"></div>
+        <div class="start">
+            <i class="fa fa-star"></i>
+        </div>
+        <div class="lineTwo"></div>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"  *ngFor="let meals of meal">
+                <div class="image">
+                    <img [src]="meals.image" [alt]="meals.title">
+                        <div class="btnHover">
+                            <button class="btn bg-none" (click)="Selected(meals)" (click)="visible = true"> 
+                             <i class="fa-solid fa-circle-plus" ></i>
+                            </button>
+                        </div>
+                </div>
+            </div>         
+        </div>
+    </div>
+    <div class="content" *ngIf="visible">
+        <div class="container">
+      <button class="btn bg-none border-0"(click)="visible = false"><i class="btnClose fa fa-x"></i></button>  
+        <h2>{{name}}</h2>
+        <!-- <div class="lineStar">
+            <div class="lineOne1"></div>
+            <div class="start">
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="lineTwo2"></div>
+        </div> -->
+        <img [src]="images" alt="">
+        <p class="lead  p-2">{{disc}}</p>
+        <button class="btn btn-danger" (click)="visible = false"><i class="fa fa-x"></i> Close</button>
+    </div>                                       
+</div>
+</div>
